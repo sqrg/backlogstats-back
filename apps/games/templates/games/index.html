@@ -1,0 +1,16 @@
+<h1>Collection</h1>
+
+<ul>
+{% for own_game in collection %}
+    <li>{{ own_game.game.name }}</li>
+    <img src="{{ own_game.game.cover_url }}" />
+{% endfor %}
+</ul>
+
+<h1>Lists</h1>
+
+<ul>
+{% for list in lists %}
+    <li>{{ list.name }}</li>
+{% endfor %}
+</ul>
